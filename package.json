@@ -1,0 +1,43 @@
+{
+  "name": "fun-with-streams",
+  "version": "1.0.0",
+  "description": "bogotajs workshop Nov 12 2015",
+  "main": "index.js",
+  "dependencies": {
+    "JSONStream": "^0.9.0",
+    "brfs": "^1.2.0",
+    "colors": "^1.0.3",
+    "delay-stream": "^0.0.3",
+    "ecstatic": "^1.2.0",
+    "event-stream": "^3.1.7",
+    "handlebars": "^2.0.0",
+    "domready": "^1.0.8",
+    "http": "^0.0.0",
+    "hbsfy": "^2.2.1",
+    "johnny-five": "^0.9.7",
+    "jquery-browserify": "^1.8.1",
+    "jsonpretty": "^0.0.1",
+    "json-stream": "^0.2.2",
+    "jsonparse": "^0.0.5",
+    "level": "^0.18.0",
+    "mux-demux": "^3.7.9",
+    "readable-stream": "^2.0.4",
+    "prettyjson": "^1.0.0",
+    "request": "^2.49.0",
+    "scale-number-range": "^1.0.3",
+    "split": "^0.3.1",
+    "shoe": "^0.0.15",
+    "throttle": "^1.0.3",
+    "through": "^2.3.6",
+    "tinycolor2": "^1.1.2",
+    "through2": "^2.0.0",
+    "websocket": "^1.0.13",
+    "zlib": "^1.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@hugozap",
+  "license": "MIT"
+}
