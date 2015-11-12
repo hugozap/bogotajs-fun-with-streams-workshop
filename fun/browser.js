@@ -15,17 +15,16 @@ domready(function(){
 	 //randomNumberStream
 	 //sinSequence
 	 serverStream
-	 	.pipe(through(addItem))
-	 	.pipe(through(addItem2));
+	 	.pipe(through(flame))
+	 	.pipe(through(stampColor));
 
 })
 
 
-function addItem(color){
+function flame(color){
 
-	console.log(color.toString());
 	var item                   = document.createElement('div');
-	var container              = document.querySelector('.container')
+	var container              = document.querySelector('.engine')
 	item.className             = 'item';
 	item.style.backgroundColor = color.toString();
 
@@ -34,20 +33,19 @@ function addItem(color){
 	container.appendChild(item);
 
 	setTimeout(function(){
-		document.querySelector('.container').removeChild(item);
+		container.removeChild(item);
 	},5000);
 
 	this.push(color);
 }
 
 
-function addItem2(color){
+function stampColor(color){
 
-	console.log(color.toString());
 	var item = document.createElement('div');
 	item.className = 'item2';
 	item.style.backgroundColor = color.toString();
-	var container = document.querySelector('.container');
+	var container = document.querySelector('.colors');
 	container.appendChild(item);
 	// container.insertBefore(item, container.firstChild);
 	container.scrollTop = container.scrollHeight;

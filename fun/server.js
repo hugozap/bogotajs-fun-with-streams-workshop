@@ -12,12 +12,10 @@ var ecstatic = require('ecstatic')(__dirname + '/browser');
 var server = http.createServer(ecstatic);
 server.listen(9999);
 
-var sensor = new SensorStream();
 //Crear web socket como stream 
 var sock = shoe(function (stream) {
 	
-	   	sensor
-	   		// .pipe(smoothStream(30))
+	   	sinStream()
 			.pipe(numberToColorStream())
 			.pipe(stream)
 
