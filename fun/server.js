@@ -15,7 +15,8 @@ server.listen(9999);
 //Crear web socket como stream 
 var sock = shoe(function (stream) {
 	
-	   	sinStream()
+	   //	new SensorStream()
+	   		sinStream
 			.pipe(numberToColorStream())
 			.pipe(stream)
 

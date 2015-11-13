@@ -7,6 +7,7 @@ var through             = require('through2')
 var SensorStream        = require('./sensorStream.js');
 
 randomNumberStream()
+.pipe(numberToColorStream())
 // .pipe(process.stdout);
 // new SensorStream()
 	//.pipe(numberToColorStream)
